@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>旅游网</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="a.css">
+  <link rel="stylesheet" href="main.css">
+  <style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+        width: 100%;
+        height: 650px;
+    }
+    </style>
+</head>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark mx-auto">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">旅游咩</a>
+      
+        <!-- Links -->
+        <ul class="navbar-nav  mx-auto">
+                <div class="input-group-prepend">
+                        <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                 产品
+                                </a>
+                                <div class="dropdown-menu">
+                                  <a class="dropdown-item" href="#">出境游</a>
+                                  <a class="dropdown-item" href="#">境内游</a>
+                                  <a class="dropdown-item" href="#">主题游</a>
+                                  <a class="dropdown-item" href="#">团游</a>
+                                </div>
+                      </div>
+                      <form class="form-inline "  >
+                        <input class="form-control" type="text" placeholder="""> 
+                        <button class="btn btn-success" type="button">搜索</button>
+                      </form>
+                      <ul class="navbar-nav">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">登录/注册</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="xc.html"">我的行程</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">个人中心</a>
+                        </li>
+                      </ul>  
+                        </div>
+        </ul>
+      </nav>
+
+      
+
+
+<div id="demo" class="carousel slide carousel-scale" data-ride="carousel">
+ 
+    <!-- 指示符 -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+   
+    <!-- 轮播图片 -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://b4-q.mafengwo.net/s15/M00/66/DC/CoUBGV21F2GAXecmACIElGTC1Vg153.png?imageMogr2%2Finterlace%2F1"  >
+      </div>
+      <div class="carousel-item">
+        <img src="http://pic1.win4000.com/wallpaper/9/59bc8a3d29f45.jpg">
+      </div>
+      <div class="carousel-item">
+        <img src="http://up.enterdesk.com/edpic_source/55/ec/cf/55eccf7a97d544dd1efe1293b5f5f278.jpg">
+      </div>
+    </div>
+   
+    <!-- 左右切换按钮 -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+   
+  </div>
+
+  <div class="cpiao " >
+<body >
+    <div class="b_cgy_sch clrfix" id="js_searchbox">
+        <div class="e_csh_cgy" style="height: 100%;">
+            <ul class="nav_cgy" id="js_nva_cgy"><li class="c_flight cur first js-searchnav " data-for="flight"><a data-beacon="顶部一级tab-机票" href="javascript:;" rel="nofollow">机票<i id="cor-flight" class="c_corner " hide=""></i></a></li><li class="c_hotel  js-searchnav " data-for="hotel"><a data-beacon="顶部一级tab-酒店" href="javascript:;" rel="nofollow">酒店<i id="cor-hotel" class="c_corner " hide=""></i></a></li><li class="c_train  js-searchnav " data-for="train"><a data-beacon="顶部一级tab-火车票" href="javascript:;" rel="nofollow">火车票<i id="cor-train" class="c_corner " hide=""></i></a></li><li class="c_package  js-searchnav " data-for="package"><a data-beacon="顶部一级tab-度假" href="javascript:;" rel="nofollow">度假<i id="cor-package" class="c_corner " hide=""></i></a></li><li class="c_piao  js-searchnav " data-for="piao"><a data-beacon="顶部一级tab-门票" href="javascript:;" rel="nofollow">门票<i id="cor-piao" class="c_corner " hide=""></i></a></li><li class="c_tuan  js-searchnav " data-for="tuan"><a data-beacon="顶部一级tab-团购" href="javascript:;" rel="nofollow">团购<i id="cor-tuan" class="c_corner " hide=""></i></a></li><li class="c_car  js-searchnav " data-for="car"><a data-beacon="顶部一级tab-车车" href="javascript:;" rel="nofollow">车车<i id="cor-car" class="c_corner " hide=""></i></a></li><li class="c_freetrip last js-searchnav " data-for="freetrip"><a data-beacon="顶部一级tab-自由行" href="javascript:;" rel="nofollow">自由行<i id="cor-freetrip" class="c_corner " hide=""></i></a></li></ul>
+        </div>
+        <div class="e_csh_sch">
+            <div id="js_searchbox_flight" class="js-searchbox-panel e_csh_sch_fl" style="display: block;"><div class="e_csh_sch_flpn searchbox-flight">
+<div class="ch_search_tab">
+<div class="rt_link"><a href="http://user.qunar.com/flight_toolbox.jsp?catalog=ownorders&amp;from=qunarindexP1" rel="nofollow" target="_blank" class="icon-status">出票状态查询</a><a href="http://user.qunar.com/flight_toolbox.jsp?catalog=ownorders&amp;from=tuigai" rel="nofollow" target="_blank" class="icon-edit">退票改签</a></div>
+<ul class="ul_search_tab">
+<li class="cur" id="js_domestic_tab"><a href="#" rel="nofollow" onclick="return false;">国内机票</a></li>
+<li id="js_inter_tab"><a href="#" rel="nofollow" onclick="return false;">国际·港澳台机票</a></li>
+</ul>
+</div>
+<div class="con">
+<div class="ch_sch_form ch_sch_flt_bf clrfix" id="js_flighttype_tab_domestic">
+<form action="/twell/flight/Search.jsp" method="get" id="js_flight_domestic_searchbox">
+    <input type="hidden" value="qunarindex" name="from">
+    <div class="crl_group">
+        <div class="controls"> 
+            <label class="lal_rdo" for="js_searchtype_oneway" hidefocus="on">
+                <input name="searchType" data-beacon="国内机票-单程" type="radio" class="inp_rad js-searchtype-oneway" value="OnewayFlight" checked="checked" id="js_searchtype_oneway">
+                单程</label>
+            <label class="lal_rdo" for="js_searchtype_roundtrip" hidefocus="on">
+                <input name="searchType" data-beacon="国内机票-往返" type="radio" class="inp_rad js-searchtype-roundtrip" value="RoundTripFlight" id="js_searchtype_roundtrip">
+                往返</label>
+        </div>
+    </div>
+    <div class="crl_group iwrap">
+        <div class="crl_sp2_1">
+            
+            <div class="controls">
+                <div class="qcbox qcity" style="z-index: 40;">
+                    <div class="qunar-qcbox"><div class="qcbox-placeholder" style="width: 160px; left: 35px; padding-left: 0px; height: 35px; line-height: 35px; display: none;">输入国家/地区/城市/机场</div><div class="qcbox-prefix">出发</div><div class="qcbox-info"><b></b></div><input type="text" value="" name="fromCity" class="cinput textbox" data-qcbox-placeholder="城市名" data-qcbox-prefix="出发" data-qcbox-suggest="flight-fromcity" data-qcbox-hotcity="flight" autocomplete="off" x-webkit-speech="x-webkit-speech" spellcheck="false" data-detect-oninput="1" style="left: 32px;"><div class="qcbox-fixed"></div></div>
+                    <div class="qsuggest-contaier js-suggestcontainer"><div class="q-suggest" style="display: none; z-index: 500;"></div></div>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="qcbox qcity" style="z-index: 30;">
+                    <div class="qunar-qcbox"><div class="qcbox-placeholder" style="width: 160px; left: 35px; padding-left: 0px; height: 35px; line-height: 35px;">输入国家/地区/城市/机场</div><div class="qcbox-prefix">到达</div><div class="qcbox-info"><b></b></div><input type="text" value="" name="toCity" class="cinput textbox" data-qcbox-placeholder="城市名" data-qcbox-prefix="到达" data-qcbox-suggest="flight-tocity" data-qcbox-hotcity="flight" autocomplete="off" x-webkit-speech="x-webkit-speech" spellcheck="false" data-detect-oninput="2" style="left: 32px;"><div class="qcbox-fixed"></div></div>
+                    <div class="qsuggest-contaier js-suggestcontainer"><div class="q-suggest" style="display: none; z-index: 500;"></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="crl_sp2_2">
+            <div class="controls">
+                <div class="qcbox qdate fromD" style="z-index: 20;">
+                    <div class="qunar-dp"><div class="dp-prefix">日期</div><div class="dp-info"><b></b><span class="dp-text">后天</span></div><input type="text" id="js_domestic_fromdate" value="" name="fromDate" class="cinput textbox" autocomplete="off" maxlength="10" data-prefix="日期" spellcheck="false" data-type="oneWay" style="left: 32px;"></div>
+                <div class="q-datepicker-fly" style="display: none;"></div></div>
+            </div>
+            <div class="controls js_arrivalDateDiv" style="display:none">
+                <div class="qcbox qdate toD" style="z-index: 10;">
+                    <div class="qunar-dp"><div class="dp-prefix" style="">日期</div><div class="dp-info"><b></b><span class="dp-text">周一</span></div><input type="text" id="js_domestic_todate" value="" name="toDate" class="cinput textbox" autocomplete="off" maxlength="10" data-prefix="日期" spellcheck="false" style="left: 8px;"></div>
+                <div class="q-datepicker-fly" style="display: none;"></div></div>
+            </div>
+            <div class="controls js_arrivalDateDiv_disable">
+                <div class="qcbox qdate toD qcbox_disable" style="z-index: 10;">
+                    <div class="qunar-dp">
+                        <div class="dp-prefix">日期</div>
+                        <div class="dp-info"><b></b><span class="dp-text"></span></div>
+                        <input type="text" value="" class="cinput textbox" style="left: 32px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="crl_group crl_group_submit">
+        <div class="controls"> <span class="p_btn"><button type="submit" class="button-search"></button>
+            </span>
+            <div class="p_text">
+                <div class="flight_ad js-searchbox-ad"></div>
+                <p class="linenum">
+                    <span id="js_alsosearch_domestic" style="display: none;"></span>
+                    可实时搜索&nbsp;<span class="highlight">28万</span>&nbsp;条国内国际航线
+                </p>
+            </div>
+        </div>
+    </div>
+<input type="hidden" name="ishttps" value="1"></form>
+</div>
+</div>
+<div class="foot">
+<a href="http://www.qunar.com/xiaobao/flight.html" rel="nofollow" target="_blank" class="img"></a>
+<div style="width: 100%; display: none;"></div><abbr id="flightSearchBoxAd" style="display:none;" data-type="qad" data-query="f=s&amp;cur_page_num=0&amp;rep=1&amp;tag=99&amp;vataposition=QNR_Mjg%3D_CN&amp;vatacon=&amp;rows=1&amp;qtype=js&amp;vataframe=bannerDefault" data-style="width:100%;"></abbr>
+</div>
+</div>
+</div>
+            <div id="js_searchbox_freetrip" class="js-searchbox-panel e_csh_sch_freetrip" style="display:none;">
+                <div class="e_csh_sch_flpn searchbox-freetrip">
+                    <div id="freetrip_loading" class="freetrip-loading">
+                        <img class="e_csh_sch_loadding" src="//simg4.qunarzz.com/tts/images/demo/spinner_tra.gif">
+                    </div>
+                 
+                    <div class="foot">
+                        <div id="freetrip_footer" class="freetrip-footer">
+                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<div  class="gg"  style="width: 650px; height: 300px;">
+        <img  src="https://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20197/3f5ff03fa0c024b930f515e63ae2c702.jpg_945x288_7dff4510.jpg" alt="" class="tp">
+ </div>
+
+</div>
+<body>
+  <!-- 旅游主数据区开始-->
+  <div class="mod">
+      <div class="top"><img src="https://source.qunarzz.com/site/images/wns/20191011_pc_1200x90_N1_11680.jpg"  alt=""></div >
+      <!-- 主题游开始  -->
+      <div class="mod-content">
+          <div class="left ">
+              <div class="entrance  entrance-theme">
+                  <dl class="keyword-short">
+                      <dt>东南亚</dt>
+                      <dd><span class="entrance-item" ><a href="#">泰国</a><span class="icon_hot"></span></span>
+                          <span class="entrance-item" ><a href="#">越南</a><span class="icon_hot"></span></span>
+                          <span class="entrance-item" ><a href="#">文莱</a></span>
+                          <span class="entrance-item" ><a href="#">缅甸</a></span>
+                          <span class="entrance-item" ><a href="#">普吉岛</a></span>
+                          <span class="entrance-item"><a href="#">新加坡</a></span>
+                          <span class="entrance-item"><a href="#">巴厘岛</a><span class="icon_hot"></span></span>
+                          <span class="entrance-item"><a href="#">马来西亚</a></span>
+                          <span class="entrance-item" ><a href="#">更多</a></span>
+                      </dd>
+                  </dl>
+                  <dl class="keyword-short">
+                      <dt>欧洲</dt>
+                      <dd><span class="entrance-item" ><a href="#">意大利</a></span>
+                          <span class="entrance-item" ><a href="#">冰岛</a></span>
+                          <span class="entrance-item" ><a href="#">西班牙</a></span>
+                        <span class="entrance-item" ><a href="#">俄罗斯</a></span>
+                          <span class="entrance-item" ><a href="#">英国</a></span>
+                          <span class="entrance-item" ><a href="#">挪威</a></span>
+                          <span class="entrance-item" ><a href="#">法国</a></span>
+                          <span class="entrance-item" ><a href="#">更多</a></span>
+                      </dd>
+                  </dl>
+                  <dl class="keyword-short">
+                      <dt>美洲</dt>
+                      <dd><span class="entrance-item" ><a href="#">美国东西海岸</a><span class="icon_hot"></span></span>
+                          <span class="entrance-item" ><a href="#">美国阿拉斯加</a></span>
+                          <span class="entrance-item" ><a href="#">夏威夷</a></span>
+                          <span class="entrance-item" ><a href="#">加拿大</a></span>
+                          <span class="entrance-item" ><a href="#">旧金山</a></span>
+                          <span class="entrance-item" ><a href="#">更多</a></span>
+                      </dd>
+                  </dl>
+                  <dl class="keyword-short">
+                      <dt>中东非</dt>
+                      <dd><span class="entrance-item" ><a href="#">埃及迪拜</a></span>
+                          <span class="entrance-item" ><a href="#">埃及尼罗河</a></span>
+                          <span class="entrance-item" ><a href="#">摩洛哥</a></span>
+                          <span class="entrance-item" ><a href="#">更多</a></span>
+                         
+                      </dd>
+                  </dl>
+            
+                  
+              </div>
+
+          </div>
+          <!-- 主题游右区 -->
+          <div class="right">
+              <ul class="select">
+                  <li><a href="#" class="more">更多主题游<i class="i_index_next"></i></a></li>
+              </ul>
+              <ul class="product">
+                  <li class="product-item" title="体育赛事">
+                      <a href="#">
+                          <div class="item-thumbnail">
+                              <img src="https://m.tuniucdn.com/fb2/t1/G1/M00/4D/48/Cii9EVk2gDqIO0TcAEo933_QragAALxsADFsJEASj33950_w320_h180_c1_t0.jpg" >
+                          </div>
+                          <p class="item-name"><冰岛当地7日+往返机票游>4至7人纯玩小团，极地探索之蓝冰洞/冬季追极光/飞机残骸/蓝湖温泉，可延续行程</p>
+                          <p class="item-info">
+                              <span class="price"><dfn>&yen</dfn>17088<i>起</i></span>
+                          </p>
+                      </a>
+                  </li>
+                  <li class="product-item" title="徒步登山">
+                      <a href="#">
+                          <div class="item-thumbnail">
+                              <img src="http://m.tuniucdn.com/fb2/t1/G1/M00/C0/A5/Cii9EVjbdHaIcZ46AApVwP0TBNAAAJM9gHjRTEAClXY139_w500_h280_c1_t0.jpg" >
+                          </div>
+                          <p class="item-name">[国庆]<俄罗斯-莫斯科+谢尔盖耶夫小镇+圣彼得堡8-9日游>广州起止/俄航直飞/四飞/住四星/红场/夏宫花园/冬宫/金环谢镇/特别安排滑雪</p>
+                          <p class="item-info">
+                              <span class="price no-price">实时计价</span>
+                          </p>
+                      </a>
+                  </li>
+                  <li class="product-item" title="奢旅生活">
+                      <a href="#">
+                          <div class="item-thumbnail">
+                              <img src="http://m.tuniucdn.com/fb2/t1/G5/M00/D4/37/Cii-slrfHYOIDYt5ABfxuc_6MHIAAGBJAFPKmgAF_HR676_w500_h280_c1_t0.jpg" >
+                          </div>
+                          <p class="item-name"><意大利一地10日游>广州往返，罗马进米兰出，升级一晚五星，五大名城，米兰，水城威尼斯，罗马，佛罗伦萨，天空之城，五渔村，酒庄</p>
+                          <p class="item-info">
+                              <span class="price"><dfn>&yen</dfn>45500<i>起</i></span>
+                          </p>
+                      </a>
+                  </li>
+                  <li class="product-item" title="潜水">
+                      <a href="#">
+                          <div class="item-thumbnail">
+                              <img src="http://m.tuniucdn.com/fb2/t1/G5/M00/2B/AB/Cii-slsZ5z6IGlVwAB_5Fs9cNyAAAIKEgPCSnsAH_ku689_w500_h280_c1_t0.jpg" >
+                          </div>
+                          <p class="item-name"><俄罗斯-莫斯科+圣彼得堡9日游>深圳南航直飞，0自费，住国际四星，冬宫/夏宫花园/金环谢镇/克里姆林宫/叶卡宫</p>
+                          <p class="item-info">
+                              <span class="price"><dfn>&yen</dfn>5990<i>起</i></span>
+                          </p>
+                      </a>
+                  </li>
+                  <li class="product-item" title="滑雪">
+                      <a href="#">
+                          <div class="item-thumbnail">
+                              <img src="https://s.tuniu.net/qn/image/f1/96eb8967180159d556109c3ef417aa71/db0f7d9a-d103-4db7-8288-0fafc21f4fcb.jpeg?imageView2/1/w/500/h/280" alt="滑雪">
+                          </div>
+                          <p class="item-name"><澳大利亚8日游>AC行程凯恩斯大堡礁/B行程墨尔本大洋路、野生动物园/D行程澳洲东岸大堡礁大洋路全景十天 </p>
+                          <p class="item-info">
+                              <span class="price"><dfn>&yen</dfn>28500<i>起</i></span>
+                          </p>
+                      </a>
+                  </li>
+                  <li class="product-item" title="越野自驾">
+                      <a href="#">
+                          <div class="item-thumbnail">
+                              <img src="http://m.tuniucdn.com/filebroker/cdn/olb/ff/e2/ffe2e3d3fe014e62913ad761c9a05e6f_w500_h280_c1_t0.jpg" >
+                          </div>
+                          <p class="item-name"><美国西海岸+洛杉矶+拉斯维加斯9-12日游>预售，上海直飞/部分限联运客人报名/含服务费/大峡谷/羚羊峡，C线升级4星含旧金山</p>
+                          <p class="item-info">
+                              <span class="price no-price">实时计价</span>
+                          </p>
+                      </a>
+                  </li>
+                  <li class="product-item" title="高空项目">
+                      <a href="#">
+                          <div class="item-thumbnail">
+                              <img src="http://m.tuniucdn.com/fb2/t1/G5/M00/5D/C0/Cii-tFp76jWIDeiBAApNT_CeHX8AADQ1AJzMbwACk1n531_w500_h280_c1_t0.jpg">
+                          </div>
+                          <p class="item-name"><德国+法国+瑞士+意大利11-13日游>全含0自费，成都直飞，阿尔卑斯山，双宫双游船，A线升级法拉利/法式四道式，WIF，可联运，可异地指纹 </p>
+                          <p class="item-info">
+                              <span class="price"><dfn>&yen</dfn>17109<i>起</i></span>
+                          </p>
+                      </a>
+                  </li>
+                  <li class="product-item" title="成长体验">
+                      <a href="#">
+                          <div class="item-thumbnail">
+                              <img src="http://m.tuniucdn.com/fb2/t1/G2/M00/47/D1/Cii-TljLr_OIG3fwABZuibOual8AAIn0wPd6WUAFm6h009_w500_h280_c1_t0.jpg">
+                          </div>
+                          <p class="item-name"><英国+德法瑞意比16日游>欧洲自营，一价全含0自费，一次两国指纹，欧洲之星，温莎堡，大英博物馆，牛津，双宫双游船，雪朗峰，罗马深度游，比萨</p>
+                          <p class="item-info">
+                              <span class="price"><dfn>&yen</dfn>12938<i>起</i></span>
+                          </p>
+                      </a>
+                  </li>
+              </ul>
+
+          </div>
+          <!-- 主题游右区结束 -->
+      </div>
+      <!-- 主题旅结束 -->
+  </div>
+  
+  <div class="mod">
+    <div class="top"><img src="https://source.qunarzz.com/site/images/wns/20191011_pc_1200x90_N1_11680.jpg"  alt=""></div >
+    <!-- 主题游开始  -->
+    <div class="mod-content">
+        <div class="left ">
+            <div class="entrance  entrance-theme">
+                <dl class="keyword-short">
+                    <dt>境内游</dt>
+                    <dd><span class="entrance-item" ><a href="#">三亚</a><span class="icon_hot"></span></span>
+                        <span class="entrance-item" ><a href="#">丽江</a><span class="icon_hot"></span></span>
+                        <span class="entrance-item" ><a href="#">厦门</a></span>
+                        <span class="entrance-item" ><a href="#">东北</a></span>
+                        <span class="entrance-item" ><a href="#">北京</a></span>
+                        <span class="entrance-item"><a href="#">桂林</a></span>
+                        <span class="entrance-item" ><a href="#">更多</a></span>
+                    </dd>
+                </dl>
+                <dl class="keyword-short">
+                    <dt>南方</dt>
+                    <dd><span class="entrance-item" ><a href="#">丽江</a></span>
+                        <span class="entrance-item" ><a href="#"> 版纳</a></span>
+                        <span class="entrance-item" ><a href="#">桂林</a></span>
+                      <span class="entrance-item" ><a href="#"> 阳朔</a></span>
+                        <span class="entrance-item" ><a href="#">千户苗寨</a></span>
+                        <span class="entrance-item" ><a href="#">长隆欢乐世界</a></span>
+                        <span class="entrance-item" ><a href="#">深圳</a></span>
+                        <span class="entrance-item" ><a href="#">更多</a></span>
+                    </dd>
+                </dl>
+                <dl class="keyword-short">
+                    <dt>西部</dt>
+                    <dd><span class="entrance-item" ><a href="#">九寨</a><span class="icon_hot"></span></span>
+                        <span class="entrance-item" ><a href="#">成都</a></span>
+                        <span class="entrance-item" ><a href="#">拉萨</a></span>
+                        <span class="entrance-item" ><a href="#">布达拉宫日喀则</a></span>
+                        <span class="entrance-item" ><a href="#">青海湖</a></span>
+                        <span class="entrance-item" ><a href="#">更多</a></span>
+                    </dd>
+                </dl>
+                <dl class="keyword-short">
+                    <dt>北部</dt>
+                    <dd><span class="entrance-item" ><a href="#">天安门</a></span>
+                        <span class="entrance-item" ><a href="#">长城|故宫| 颐和园</a></span>
+                        <span class="entrance-item" ><a href="#">兵马俑</a></span>
+                        <span class="entrance-item" ><a href="#">长白山</a></span>
+                        <span class="entrance-item" ><a href="#">沈阳</a></span>
+                        <span class="entrance-item" ><a href="#">呼和浩特</a></span>
+                        <span class="entrance-item" ><a href="#">承德</a></span>
+                        <span class="entrance-item" ><a href="#">更多</a></span>
+                    </dd>
+                </dl>
+          
+                
+            </div>
+
+        </div>
+        <!-- 主题游右区 -->
+        <div class="right">
+            <ul class="select">
+                <li><a href="#" class="more">更多主题游<i class="i_index_next"></i></a></li>
+            </ul>
+            <ul class="product">
+                <li class="product-item" >
+                    <a href="#">
+                        <div class="item-thumbnail">
+                            <img src="http://s.tuniu.net/qn/image/f2/cc96b84a334c6a0346728a7694b2bed6/062e9ede-f17f-42e2-b8d4-023ac436f952.jpeg?imageView2/1/w/500/h/280" alt="体育赛事">
+                        </div>
+                        <p class="item-name"><韶山-张家界-百龙电梯-天门山-玻璃栈道-凤凰古城双飞6日游>4晚豪华型或5星酒店,凤凰含价值125元9景/船游黄龙洞/135元特色餐,赠144元百龙天梯</p>
+                        <p class="item-info">
+                            <span class="price"><dfn>&yen</dfn>17088<i>起</i></span>
+                        </p>
+                    </a>
+                </li>
+                <li class="product-item" >
+                    <a href="#">
+                        <div class="item-thumbnail">
+                            <img src="https://s.tuniu.net/qn/image/f1/cde3f9a41476b92f3d67ea64889a44c1/42fc667d-5829-4587-97f2-f739de245640.jpeg?imageView2/1/w/500/h/280" alt="徒步登山">
+                        </div>
+                        <p class="item-name"><上海迪士尼+华东六市+周庄双飞6日游>0购物,正餐50元+/住乌镇五星酒店,15分钟走到西栅/登雷峰塔,360度看西湖/玩转鼋头渚+拈花湾/途牛直采,节省近2成</p>
+                        <p class="item-info">
+                            <span class="price no-price">实时计价</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="product-item" >
+                    <a href="#">
+                        <div class="item-thumbnail">
+                            <img src="http://m.tuniucdn.com/fb2/t1/G5/M00/E0/08/Cii-slzw_1-Ie2hUABzTC5WxHVQAAWWdgL_1fMAHNMj993_w500_h280_c1_t0.jpg" alt="奢旅生活">
+                        </div>
+                        <p class="item-name"><丽江-香格里拉-大理-泸沽湖-玉龙雪山双飞8日游>15人小团0购物,洱海海景房/泸沽湖景房,洱海旅拍,冰川索道/蓝月谷/印象丽江,5A普达措公园,全景游</p>
+                        <p class="item-info">
+                            <span class="price"><dfn>&yen</dfn>45500<i>起</i></span>
+                        </p>
+                    </a>
+                </li>
+                <li class="product-item" >
+                    <a href="#">
+                        <div class="item-thumbnail">
+                            <img src="http://m.tuniucdn.com/fb2/t1/G4/M00/15/38/Cii_J1mhFxuILpWkAAMD5hNMnUoAAAcMwHDTRMAAwP-275_w500_h280_c1_t0.jpg" alt="潜水">
+                        </div>
+                        <p class="item-name"><海南-三亚-蜈支洲岛-南山-北海-红树林-桂林-大漓江-银子岩-世外桃源双飞10日游>海南广西2省一起游、舒适旅程，全景桂北海</p>
+                        <p class="item-info">
+                            <span class="price"><dfn>&yen</dfn>5990<i>起</i></span>
+                        </p>
+                    </a>
+                </li>
+                <li class="product-item" >
+                    <a href="#">
+                        <div class="item-thumbnail">
+                            <img src="https://m.tuniucdn.com/fb2/t1/G1/M00/1E/8C/Cii9EFdntYWIBxU9AAUoGgZrYl8AAGo3wNC6JsABSgy031_w500_h280_c1_t0.jpg" alt="滑雪">
+                        </div>
+                        <p class="item-name"><呼伦贝尔草原+莫日格勒河+室韦+根河湿地+白桦林双飞6日游>全程SUV用车/18人团，0购物，套娃主题酒店，烤全羊/驯鹿部落/呼伦湖，异域满洲里</p>
+                        <p class="item-info">
+                            <span class="price"><dfn>&yen</dfn>28500<i>起</i></span>
+                        </p>
+                    </a>
+                </li>
+                <li class="product-item" >
+                    <a href="#">
+                        <div class="item-thumbnail">
+                            <img src="http://s.tuniu.net/qn/image/f2/4962852e94bd27473347a7b025a05437/01f51a0f-64f9-47b4-9dbe-d7d983676a5c.jpeg?imageView2/1/w/500/h/280" alt="越野自驾">
+                        </div>
+                        <p class="item-name"><呼伦贝尔-冷极村-驯鹿部落-根河湿地-满洲里双飞双卧5日游>自营0购，访牧户/赏雾凇/扭秧歌/雪地火锅、网红泼水成冰/吹冰晶泡泡,童话之旅</p>
+                        <p class="item-info">
+                            <span class="price no-price">实时计价</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="product-item" >
+                    <a href="#">
+                        <div class="item-thumbnail">
+                            <img src="http://m.tuniucdn.com/fb2/t1/G1/M00/EE/09/Cii9EFdOVkGIVcKkAA59us4UZRAAAGRZQPUXhgADn3S825_w500_h280_c1_t0.jpg" alt="高空项目">
+                        </div>
+                        <p class="item-name"><陕西-黄帝陵-壶口-华山-兵马俑-华清池双飞6日游>24H接送/酒店可升级，夜宿华山畅玩6小时，赠登山礼包/皮影戏/华阴老腔，民俗美食街区 </p>
+                        <p class="item-info">
+                            <span class="price"><dfn>&yen</dfn>17109<i>起</i></span>
+                        </p>
+                    </a>
+                </li>
+                <li class="product-item" >
+                    <a href="#">
+                        <div class="item-thumbnail">
+                            <img src="https://m.tuniucdn.com/fb2/t1/G2/M00/42/16/Cii-TFe2od6IQhZ9AByEpltVIw0AABbAwA_SVsAHIS-893_w500_h280_c1_t0.jpg" alt="成长体验">
+                        </div>
+                        <p class="item-name"><成都-都江堰-青城山-乐山-峨眉山双飞6日游>20人0购小团，一车一导，本地人深度玩法，夜游都江堰，晨起游熊猫，乐山进山游，2大网红餐</p>
+                        <p class="item-info">
+                            <span class="price"><dfn>&yen</dfn>12938<i>起</i></span>
+                        </p>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+    
+    <!-- 主题旅结束 -->
+</div>
+<div class="mod">
+   
+    <!-- 主题游开始  -->
+    <div class="mod-content">
+        <div class="left ">
+            <div class="entrance  entrance-theme">
+                <dl class="keyword-short">
+                    <dt>热门主题游玩法</dt>
+                    <dd><span class="entrance-item" ><a href="#">海滨海岛</a><span class="icon_hot"></span></span>
+                        <span class="entrance-item" ><a href="#">蜜月度假</a><span class="icon_hot"></span></span>
+                        <span class="entrance-item" ><a href="#">游乐园</a></span>
+                        <span class="entrance-item" ><a href="#">名山胜水</a></span>
+                        <span class="entrance-item" ><a href="#">免签出境</a></span>
+                        <span class="entrance-item"><a href="#">婚纱摄影</a></span>
+                        <span class="entrance-item" ><a href="#">更多</a></span>
+                    </dd>
+                </dl>
+          
+                <img src="https://m.tuniucdn.com/fb2/t1/G1/M00/A7/4A/Cii9EFjJCsuIY7cdAABMh0R3BZYAAI4JAMuUhIAAEyf16.jpeg" alt="">
+            </div>
+
+        </div>
+        <!-- 主题游右区 -->
+        <div class="right">
+          
+            <div class="container">
+                <br>
+                <!-- Nav pills -->
+                <ul class="nav nav-pills" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link active" data-toggle="pill" href="#home">主题推荐</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#menu1">自助游</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="pill" href="#menu2">团游</a>
+                  </li>
+                  <ul class="select">
+                    <li><a href="#" class="more">更多主题游<i class="i_index_next"></i></a></li>
+                </ul>
+                </ul>
+              
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div id="home" class="container tab-pane active"><br>
+                         <ul class="product">
+                <li class="product-item" >
+                    <a href="#">
+                        <div class="item-thumbnail">
+                            <img src="http://m.tuniucdn.com/fb2/t1/G5/M00/A4/56/Cii-slv3pf-IW9JxAAvyfwrI5FIAAQ04wPqC2cAC_KX229_w500_h280_c1_t0.jpg" >
+                        </div>
+                        <p class="item-name"><厦门-鼓浪屿双飞5日半自助游>连锁快捷/主题网红客栈/中山路商圈鹭岛戴斯/锐思特酒店，连住不挪窝，鼓浪屿1日游，24接送 </p>
+                        <p class="item-info">
+                            <span class="price"><dfn>&yen</dfn>17088<i>起</i></span>
+                        </p>
+                    </a>
+                </li>
+                <li class="product-item" >
+                    <a href="#">
+                        <div class="item-thumbnail">
+                            <img src="http://m.tuniucdn.com/fb2/t1/G4/M00/73/BD/Cii_J10IoY-ICmbFAFUgJjXSxKAAAHO0QDXfq0AVSA-755_w500_h280_c1_t0.jpg" >
+                        </div>
+                        <p class="item-name"><上海迪士尼+华东六市+绍兴+乌镇+杭州双飞7日游>三次坐船,减轻舟车劳顿,逛(乌镇/木渎/周庄/绍兴)四大水乡,打卡百草园&三味书屋,入住周庄&宋城主题酒店</p>
+                        <p class="item-info">
+                            <span class="price no-price">实时计价</span>
+                        </p>
+                    </a>
+                </li>
+                <li class="product-item" >
+                    <a href="#">
+                        <div class="item-thumbnail">
+                            <img src="http://m.tuniucdn.com/filebroker/cdn/olb/74/0f/740faa651f49d8adb2fd15903a5c89e0_w500_h280_c1_t0.jpg" >
+                        </div>
+                        <p class="item-name"><沙巴5晚6日或7日自由行>全国出发，热卖四星酒店大集合，享受精品旅行</p>
+                        <p class="item-info">
+                            <span class="price"><dfn>&yen</dfn>45500<i>起</i></span>
+                        </p>
+                    </a>
+                </li>
+                <li class="product-item" >
+                    <a href="#">
+                        <div class="item-thumbnail">
+                            <img src="http://m.tuniucdn.com/filebroker/cdn/res/c3/de/c3deff866c5ec59ac5631dd4466405d8_w500_h280_c1_t0.jpg" >
+                        </div>
+                        <p class="item-name"><巴厘岛Grand Hyatt君悦酒店5晚6或7日自由行>多地出发+私人沙滩+有中文服务+近购物中心+可住2大2小+网红秋千+五星酒店下午茶可选</p>
+                        <p class="item-info">
+                            <span class="price"><dfn>&yen</dfn>5990<i>起</i></span>
+                        </p>
+                    </a>
+                </li>
+                <li class="product-item" >
+                    <a href="#">
+                        <div class="item-thumbnail">
+                            <img src="http://m.tuniucdn.com/fb2/t1/G5/M00/57/DC/Cii-tFvAUiCIaUKZAIC9fUPgFdgAAO_xgBGAysAgL2V763_w500_h280_c1_t0.jpg" >
+                        </div>
+                        <p class="item-name"><越南河内-芽庄机票+当地5晚6日游>越美食/保证0自费/优质境外领队/精选高档酒店/Iresort泥浆浴/必去天堂湾/热辣情人岛/地标占婆塔/全国出发 </p>
+                        <p class="item-info">
+                            <span class="price"><dfn>&yen</dfn>28500<i>起</i></span>
+                        </p>
+                    </a>
+                </li>
+                <li class="product-item" >
+                    <a href="#">
+                        <div class="item-thumbnail">
+                            <img src="http://m.tuniucdn.com/fb2/t1/G5/M00/3C/21/Cii-s1pcXaGIMiGdAIK93fUYFTYAACUvQFn4gQAgr31862_w500_h280_c1_t0.jpg" >
+                        </div>
+                        <p class="item-name"><马尔代夫鲁滨逊努努岛Robinson Noon5晚7日自由行>一价全含，酒水畅饮，私人泳池，海上吊床，儿童乐园，精彩表演，第1晚马累</p>
+                        <p class="item-info">
+                            <span class="price no-price">实时计价</span>
+                        </p>
+                    </a>
+                </li>
+            </ul>
+                  </div>
+                  <div id="menu1" class="container tab-pane fade"><br>
+                    <ul class="product">
+                        <li class="product-item" >
+                            <a href="#">
+                                <div class="item-thumbnail">
+                                    <img src="http://m.tuniucdn.com/fb2/t1/G5/M00/A4/56/Cii-slv3pf-IW9JxAAvyfwrI5FIAAQ04wPqC2cAC_KX229_w500_h280_c1_t0.jpg" >
+                                </div>
+                                <p class="item-name"><厦门-鼓浪屿双飞5日半自助游>连锁快捷/主题网红客栈/中山路商圈鹭岛戴斯/锐思特酒店，连住不挪窝，鼓浪屿1日游，24接送 </p>
+                                <p class="item-info">
+                                    <span class="price"><dfn>&yen</dfn>17088<i>起</i></span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="product-item" >
+                            <a href="#">
+                                <div class="item-thumbnail">
+                                    <img src="http://m.tuniucdn.com/fb2/t1/G4/M00/73/BD/Cii_J10IoY-ICmbFAFUgJjXSxKAAAHO0QDXfq0AVSA-755_w500_h280_c1_t0.jpg" >
+                                </div>
+                                <p class="item-name"><上海迪士尼+华东六市+绍兴+乌镇+杭州双飞7日游>三次坐船,减轻舟车劳顿,逛(乌镇/木渎/周庄/绍兴)四大水乡,打卡百草园&三味书屋,入住周庄&宋城主题酒店</p>
+                                <p class="item-info">
+                                    <span class="price no-price">实时计价</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="product-item" >
+                            <a href="#">
+                                <div class="item-thumbnail">
+                                    <img src="http://m.tuniucdn.com/filebroker/cdn/olb/74/0f/740faa651f49d8adb2fd15903a5c89e0_w500_h280_c1_t0.jpg" >
+                                </div>
+                                <p class="item-name"><沙巴5晚6日或7日自由行>全国出发，热卖四星酒店大集合，享受精品旅行</p>
+                                <p class="item-info">
+                                    <span class="price"><dfn>&yen</dfn>45500<i>起</i></span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="product-item" >
+                            <a href="#">
+                                <div class="item-thumbnail">
+                                    <img src="http://m.tuniucdn.com/filebroker/cdn/res/c3/de/c3deff866c5ec59ac5631dd4466405d8_w500_h280_c1_t0.jpg" >
+                                </div>
+                                <p class="item-name"><巴厘岛Grand Hyatt君悦酒店5晚6或7日自由行>多地出发+私人沙滩+有中文服务+近购物中心+可住2大2小+网红秋千+五星酒店下午茶可选</p>
+                                <p class="item-info">
+                                    <span class="price"><dfn>&yen</dfn>5990<i>起</i></span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="product-item" >
+                            <a href="#">
+                                <div class="item-thumbnail">
+                                    <img src="http://m.tuniucdn.com/fb2/t1/G5/M00/57/DC/Cii-tFvAUiCIaUKZAIC9fUPgFdgAAO_xgBGAysAgL2V763_w500_h280_c1_t0.jpg" >
+                                </div>
+                                <p class="item-name"><越南河内-芽庄机票+当地5晚6日游>越美食/保证0自费/优质境外领队/精选高档酒店/Iresort泥浆浴/必去天堂湾/热辣情人岛/地标占婆塔/全国出发 </p>
+                                <p class="item-info">
+                                    <span class="price"><dfn>&yen</dfn>28500<i>起</i></span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="product-item" >
+                            <a href="#">
+                                <div class="item-thumbnail">
+                                    <img src="http://m.tuniucdn.com/fb2/t1/G5/M00/3C/21/Cii-s1pcXaGIMiGdAIK93fUYFTYAACUvQFn4gQAgr31862_w500_h280_c1_t0.jpg" >
+                                </div>
+                                <p class="item-name"><马尔代夫鲁滨逊努努岛Robinson Noon5晚7日自由行>一价全含，酒水畅饮，私人泳池，海上吊床，儿童乐园，精彩表演，第1晚马累</p>
+                                <p class="item-info">
+                                    <span class="price no-price">实时计价</span>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                  </div>
+                  <div id="menu2" class="container tab-pane fade"><br>
+                    <ul class="product">
+                        <li class="product-item" >
+                            <a href="#">
+                                <div class="item-thumbnail">
+                                    <img src="http://m.tuniucdn.com/fb2/t1/G5/M00/A4/56/Cii-slv3pf-IW9JxAAvyfwrI5FIAAQ04wPqC2cAC_KX229_w500_h280_c1_t0.jpg" >
+                                </div>
+                                <p class="item-name"><厦门-鼓浪屿双飞5日半自助游>连锁快捷/主题网红客栈/中山路商圈鹭岛戴斯/锐思特酒店，连住不挪窝，鼓浪屿1日游，24接送 </p>
+                                <p class="item-info">
+                                    <span class="price"><dfn>&yen</dfn>17088<i>起</i></span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="product-item" >
+                            <a href="#">
+                                <div class="item-thumbnail">
+                                    <img src="http://m.tuniucdn.com/fb2/t1/G4/M00/73/BD/Cii_J10IoY-ICmbFAFUgJjXSxKAAAHO0QDXfq0AVSA-755_w500_h280_c1_t0.jpg" >
+                                </div>
+                                <p class="item-name"><上海迪士尼+华东六市+绍兴+乌镇+杭州双飞7日游>三次坐船,减轻舟车劳顿,逛(乌镇/木渎/周庄/绍兴)四大水乡,打卡百草园&三味书屋,入住周庄&宋城主题酒店</p>
+                                <p class="item-info">
+                                    <span class="price no-price">实时计价</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="product-item" >
+                            <a href="#">
+                                <div class="item-thumbnail">
+                                    <img src="http://m.tuniucdn.com/filebroker/cdn/olb/74/0f/740faa651f49d8adb2fd15903a5c89e0_w500_h280_c1_t0.jpg" >
+                                </div>
+                                <p class="item-name"><沙巴5晚6日或7日自由行>全国出发，热卖四星酒店大集合，享受精品旅行</p>
+                                <p class="item-info">
+                                    <span class="price"><dfn>&yen</dfn>45500<i>起</i></span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="product-item" >
+                            <a href="#">
+                                <div class="item-thumbnail">
+                                    <img src="http://m.tuniucdn.com/filebroker/cdn/res/c3/de/c3deff866c5ec59ac5631dd4466405d8_w500_h280_c1_t0.jpg" >
+                                </div>
+                                <p class="item-name"><巴厘岛Grand Hyatt君悦酒店5晚6或7日自由行>多地出发+私人沙滩+有中文服务+近购物中心+可住2大2小+网红秋千+五星酒店下午茶可选</p>
+                                <p class="item-info">
+                                    <span class="price"><dfn>&yen</dfn>5990<i>起</i></span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="product-item" >
+                            <a href="#">
+                                <div class="item-thumbnail">
+                                    <img src="http://m.tuniucdn.com/fb2/t1/G5/M00/57/DC/Cii-tFvAUiCIaUKZAIC9fUPgFdgAAO_xgBGAysAgL2V763_w500_h280_c1_t0.jpg" >
+                                </div>
+                                <p class="item-name"><越南河内-芽庄机票+当地5晚6日游>越美食/保证0自费/优质境外领队/精选高档酒店/Iresort泥浆浴/必去天堂湾/热辣情人岛/地标占婆塔/全国出发 </p>
+                                <p class="item-info">
+                                    <span class="price"><dfn>&yen</dfn>28500<i>起</i></span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="product-item" >
+                            <a href="#">
+                                <div class="item-thumbnail">
+                                    <img src="http://m.tuniucdn.com/fb2/t1/G5/M00/3C/21/Cii-s1pcXaGIMiGdAIK93fUYFTYAACUvQFn4gQAgr31862_w500_h280_c1_t0.jpg" >
+                                </div>
+                                <p class="item-name"><马尔代夫鲁滨逊努努岛Robinson Noon5晚7日自由行>一价全含，酒水畅饮，私人泳池，海上吊床，儿童乐园，精彩表演，第1晚马累</p>
+                                <p class="item-info">
+                                    <span class="price no-price">实时计价</span>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+       
+
+        </div>
+
+    </div>
+    
+    <!-- 主题旅结束 -->
+</div>
+  <!-- 旅游主数据区结束-->
+
+
+</body>
+
+</html>

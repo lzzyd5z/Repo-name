@@ -1,0 +1,495 @@
+
+.home-top {
+    margin-bottom: 15px;
+}
+.clrfix {
+    zoom: 1;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+body, input, textarea, button, select, pre, xmp, tt, code, kbd, samp {
+    line-height: 1.5;
+    font-family: tahoma,arial,"Hiragino Sans GB",simsun,sans-serif;
+}
+Style Attribute {
+    font-size: 12px;
+}
+html {
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
+}
+user agent stylesheet
+html {
+    color: -internal-root-color;
+}
+.clrfix:after {
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+    content: ".";
+}
+
+.home-top .b_cgy_sch {
+    float: left;
+}
+
+.clrfix {
+    zoom: 1;
+}
+.b_cgy_sch {
+    width: 710px;
+    padding: 6px;
+    background: #00afc7;
+    height: 308px;
+    _padding-bottom: 1px;
+}
+.clrfix {
+    zoom: 1;
+}
+
+user agent stylesheet
+html {
+    color: -internal-root-color;
+}
+.clrfix:after {
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+    content: ".";
+}
+
+element.style {
+    height: 100%;
+}
+.e_csh_cgy {
+    position: relative;
+    z-index: 31;
+    left: 0;
+    top: 0;
+}
+.e_csh_cgy {
+    float: left;
+    display: block;
+    width: 72px;
+}
+
+user agent stylesheet
+div {
+    display: block;
+}
+body, input, textarea, button, select, pre, xmp, tt, code, kbd, samp {
+    line-height: 1.5;
+    font-family: tahoma,arial,"Hiragino Sans GB",simsun,sans-serif;
+}
+Style Attribute {
+    font-size: 12px;
+}
+html {
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
+}
+
+.e_csh_sch {
+    height: 293px;
+    float: left;
+    padding: 1px 20px 6px 1px;
+    width: 602px;
+    position: relative;
+    z-index: 30;
+    zoom: 1;
+    display: block;
+    background: #fff;
+}
+
+user agent stylesheet
+div {
+    display: block;
+}
+body, input, textarea, button, select, pre, xmp, tt, code, kbd, samp {
+    line-height: 1.5;
+    font-family: tahoma,arial,"Hiragino Sans GB",simsun,sans-serif;
+}
+Style Attribute {
+    font-size: 12px;
+}
+html {
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
+}
+user agent stylesheet
+html {
+    color: -internal-root-color;
+}
+
+ul, ol, menu {
+    list-style: none;
+}
+body, ul, ol, dl, dd, h1, h2, h3, h4, h5, h6, figure, form, fieldset, legend, input, textarea, button, p, blockquote, th, td, pre, xmp {
+    margin: 0;
+    padding: 0;
+}
+
+user agent stylesheet
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+body, input, textarea, button, select, pre, xmp, tt, code, kbd, samp {
+    line-height: 1.5;
+    font-family: tahoma,arial,"Hiragino Sans GB",simsun,sans-serif;
+}
+Style Attribute {
+    font-size: 12px;
+}
+html {
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
+}
+user agent stylesheet
+html {
+    color: -internal-root-color;
+}
+element.style {
+    display: block;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+body, input, textarea, button, select, pre, xmp, tt, code, kbd, samp {
+    line-height: 1.5;
+    font-family: tahoma,arial,"Hiragino Sans GB",simsun,sans-serif;
+}
+
+Style Attribute {
+    font-size: 12px;
+}
+html {
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
+}
+user agent stylesheet
+html {
+    color: -internal-root-color;
+}
+
+user agent stylesheet
+div {
+    display: block;
+}
+body, input, textarea, button, select, pre, xmp, tt, code, kbd, samp {
+    line-height: 1.5;
+    font-family: tahoma,arial,"Hiragino Sans GB",simsun,sans-serif;
+}
+Style Attribute {
+    font-size: 12px;
+}
+user agent stylesheet
+html {
+    color: -internal-root-color;
+}
+
+.ch_search_tab {
+    border-bottom: 1px solid #97d3d9;
+    height: 30px;
+    line-height: 22px;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+body, input, textarea, button, select, pre, xmp, tt, code, kbd, samp {
+    line-height: 1.5;
+    font-family: tahoma,arial,"Hiragino Sans GB",simsun,sans-serif;
+}
+Style Attribute {
+    font-size: 12px;
+}
+html {
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
+}
+user agent stylesheet
+html {
+    color: -internal-root-color;
+}
+
+.searchbox-flight .con {
+    background: #f4fbfc;
+    padding: 0px 30px;
+    zoom: 1;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+body, input, textarea, button, select, pre, xmp, tt, code, kbd, samp {
+    line-height: 1.5;
+    font-family: tahoma,arial,"Hiragino Sans GB",simsun,sans-serif;
+}
+Style Attribute {
+    font-size: 12px;
+}
+
+user agent stylesheet
+html {
+    color: -internal-root-color;
+}
+
+.searchbox-flight .foot {
+    margin-top: 5px;
+}
+
+body, input, textarea, button, select, pre, xmp, tt, code, kbd, samp {
+    line-height: 1.5;
+    font-family: tahoma,arial,"Hiragino Sans GB",simsun,sans-serif;
+}
+Style Attribute {
+    font-size: 12px;
+}
+html {
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
+}
+user agent stylesheet
+html {
+    color: -internal-root-color;
+}
+
+.ch_search_tab .rt_link {
+    float: right;
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+.ch_search_tab {
+    border-bottom: 1px solid #97d3d9;
+    height: 30px;
+    line-height: 22px;
+}
+body, input, textarea, button, select, pre, xmp, tt, code, kbd, samp {
+    line-height: 1.5;
+    font-family: tahoma,arial,"Hiragino Sans GB",simsun,sans-serif;
+}
+Style Attribute {
+    font-size: 12px;
+}
+html {
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
+}
+user agent stylesheet
+html {
+    color: -internal-root-color;
+}
+
+ul, ol, menu {
+    list-style: none;
+}
+.ch_search_tab {
+    border-bottom: 1px solid #97d3d9;
+    height: 30px;
+    line-height: 22px;
+}
+body, input, textarea, button, select, pre, xmp, tt, code, kbd, samp {
+    line-height: 1.5;
+    font-family: tahoma,arial,"Hiragino Sans GB",simsun,sans-serif;
+}
+Style Attribute {
+    font-size: 12px;
+}
+html {
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
+}
+user agent stylesheet
+html {
+    color: -internal-root-color;
+}
+.ch_search_tab .rt_link a.icon-status {
+    background: url(//simg4.qunarzz.com/home/home_v5.png) no-repeat -282px -28px;
+    padding: 3px 0 3px 19px;
+}
+.ch_search_tab .rt_link a {
+    color: #999;
+    margin-left: 18px;
+}
+
+.b_cgy_sch a {
+    outline: 0;
+    color: #268fc5;
+}
+a, ins, s, u, del {
+    text-decoration: none;
+}
+input, textarea, button, select, a {
+    outline: 0 none;
+}
+user agent stylesheet
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.ch_search_tab .rt_link {
+    float: right;
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+}
+.ch_search_tab {
+    border-bottom: 1px solid #97d3d9;
+    height: 30px;
+    line-height: 22px;
+}
+body, input, textarea, button, select, pre, xmp, tt, code, kbd, samp {
+    line-height: 1.5;
+    font-family: tahoma,arial,"Hiragino Sans GB",simsun,sans-serif;
+}
+Style Attribute {
+    font-size: 12px;
+}
+html {
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
+}
+user agent stylesheet
+html {
+    color: -internal-root-color;
+}
+.ch_search_tab {
+    border-bottom: 1px solid #97d3d9;
+    height: 30px;
+    line-height: 22px;
+}
+body, input, textarea, button, select, pre, xmp, tt, code, kbd, samp {
+    line-height: 1.5;
+    font-family: tahoma,arial,"Hiragino Sans GB",simsun,sans-serif;
+}
+Style Attribute {
+    font-size: 12px;
+}
+
+html {
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
+}
+user agent stylesheet
+html {
+    color: -internal-root-color;
+}
+.ch_search_tab .rt_link {
+    float: right;
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+}
+.ul_search_tab li {
+    float: left;
+    display: block;
+    position: relative;
+}
+.searchbox-flight .con {
+    /* padding: 20px 30px; */
+    zoom: 1;
+}
+.clrfix:after {
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+    content: ".";
+}
+.ch_sch_flt_bf .crl_group {
+    margin-bottom: 10px;
+}
+.crl_sp2_1, .crl_sp2_2 {
+    float: left;
+    display: block;
+    width: 240px;
+    margin-right: 62px;
+    *margin-right: 60px;
+}
+.nav_cgy li.cur a {
+    background: #fff;
+    color: #00afc7;
+    border-color: #fff;
+}
+
+.nav_cgy li.first a {
+    border-top: 0;
+    height: 21px;
+}
+:root .nav_cgy li a {
+    line-height: 20px\9;
+}
+.nav_cgy li a {
+    position: relative;
+    background: #00d0d4;
+    border-bottom: 1px solid #00d0d4;
+    border-top: 1px solid #00d0d4;
+    /* padding: 8px 12px 8.5px 11px; */
+     height: 39px; 
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-family: "\5FAE\8F6F\96C5\9ED1";
+    color: #fff;
+    line-height: 20px;
+}
+.cpiao{
+   display: flex;contain: style;
+   width: 1500px;
+   margin: 20px auto;
+   height: 400px;
+   overflow: hidden;
+}
+.tp{
+   width: 750px; height: 308px;
+}
+.ssl{
+    height: 58px;
+}
+.bg-dark {
+    /* background-color: #343a40!important; */
+    height: 58px;
+    
+}
+.header-wrap {
+    width: 1120px;
+    height: 68px;
+    margin: 0 auto;
+    _overflow: hidden;
+    position: relative;
+    z-index: 2;
+    float: left;
+}
+.btn-success {
+    color: #fff;
+    background-color: #00afc7;
+    border-color: #28a745;
+}

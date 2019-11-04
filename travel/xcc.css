@@ -1,0 +1,22 @@
+.container {
+    max-width: 1140px;
+}
+.row{
+    max-width: 1140px;
+
+}
+.featurette-divider {
+    margin: 5rem 0;
+}
+
+.marketing h2 {
+    font-weight: 400;
+}
+.row-lineTop p em {
+    padding: 0 4px;
+    font-style: normal;
+    background-color: #ff9d00;
+    color: #fff;
+    height: 700px;
+}
+
